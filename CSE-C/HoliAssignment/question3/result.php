@@ -65,44 +65,4 @@
 	  	z.fill(0);
 	  	for(j=1;j<body.length;j++)
 	  	{ 
-	        if (j > r) 
-	        { 
-	            l = j;
-	            r = j; 
-	  			while (r<body.length && body[r-l] == body[r]) 
-	                r++; 
-	            z[j] = r-l; 
-	            r--; 
-	        } 
-	        else
-	        { 
-	            k = j-l;  
-	            if (z[k] < r-j+1) 
-	                z[j] = z[k];  
-	            else
-	            { 
-	                l = j; 
-	                while (r<body.length && body[r-l] == body[r]) 
-	                    r++; 
-	                z[j] = r-l; 
-	                r--; 
-	            } 
-	        } 
-	    } 
-	    for (k = 0; k < z.length; k++) 
-    	{ 
-        	if (z[k] == txt.length )
-            	counter++;
-   		} 
-   		if(counter != 0)
-   		{
-			str += data[i]["userId"]+"  "+data[i]["id"]+"  "+counter+"<br>";
-			console.log(str);
-   		}
-	} 
-  	
-	document.getElementById('abc').innerHTML = str;
-  }
-</script>
-</body>
-</html>
+	       
